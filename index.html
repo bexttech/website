@@ -21,10 +21,77 @@
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
+  <style>
+    .wrapper {
+      width: 960px;
+      padding: 1em 3% 1em 3%;
+      margin: 0 auto 1em auto;
+      display: grid;
+      grid-template-columns: 200px 40px auto 40px 200px;
+      grid-template-rows: auto 40px auto;
+    }
+
+    .content {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    .mainnav {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    .subhead {
+      grid-row-start: 1;
+      grid-row-end:2;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+
+    .quote {
+      grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    
+  </style>
+</head>
+
 </head>
 
 <body>
-  <h1>More coming soon...</h1>
+  <h1 class="title">BEXT Tech</h1>
   <!--   <script src="js/scripts.js"></script> -->
+
+  <!-- Inspired by https://gridbyexample.com/examples/code/layout1.html -->
+
+  <article class="wrapper">
+
+    <!-- <nav class="mainnav">
+      <ul>
+        <li><a href="">What we do?</a></li>
+        <li><a href="">Who are we?</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav> -->
+
+    <!-- <h2 class="subhead">Unique, Powerful and Optimised Software Solutions</h2> -->
+    <div class="content">
+
+      <p>BEXT Tech is a Tasmanian company that provides unique solutions to challenging backend software architectures and applications.</p>
+
+      <p>We have experience with API integrations, Cloud migrations, Serverless, Data Streaming platforms, Security solutions and DevOps/CI/CD pipelines.</p>
+
+      <p>We are platform and technology agnostic providing a process and implementation in the most appropriate programming language and toolkit for your business and team.</p>
+
+      <blockquote>More Info Coming Soon...</blockquote>
+    </div>
+
+  </article>
 </body>
 </html>
